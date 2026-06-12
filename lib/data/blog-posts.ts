@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Tooth sensitivity, bleeding gums, persistent bad breath — your mouth sends warning signals. Here's how to read them before small issues become expensive problems.",
     category: "Dental",
-    author: "Dr. Choudhury",
+    author: "Dr. Ch. Pritam Pratik Praharaj",
     date: "June 10, 2024",
     readTime: "5 min read",
     featured: true,
@@ -87,7 +87,7 @@ Even if you feel no symptoms, professional cleaning removes tartar that brushing
     excerpt:
       "Metal, ceramic, or clear aligners? The right choice depends on your child's age, lifestyle, and the complexity of their case. A complete parent's guide.",
     category: "Dental",
-    author: "Dr. Choudhury",
+    author: "Dr. Ch. Pritam Pratik Praharaj",
     date: "May 28, 2024",
     readTime: "7 min read",
     featured: false,
@@ -142,7 +142,7 @@ No orthodontic appliance works if it isn't worn. For children under 12, fixed ap
     excerpt:
       "Both are popular hair loss treatments, but they work differently and suit different patients. Our dermatologist compares efficacy, cost, and long-term results.",
     category: "Skin Care",
-    author: "Dr. Choudhury Dermatology Team",
+    author: "Dr. Ch. Pritam Pratik Praharaj Dermatology Team",
     date: "May 15, 2024",
     readTime: "6 min read",
     featured: false,
@@ -193,7 +193,7 @@ We often recommend combining both approaches for patients with moderate hair los
     excerpt:
       "Charcoal toothpaste, whitening strips, LED kits, or professional bleaching — we cut through the marketing to tell you what the evidence actually says.",
     category: "Dental",
-    author: "Dr. Choudhury",
+    author: "Dr. Ch. Pritam Pratik Praharaj",
     date: "April 30, 2024",
     readTime: "5 min read",
     featured: false,
@@ -244,7 +244,7 @@ Temporary sensitivity during or after whitening is the most common side effect. 
     excerpt:
       "Sunscreen skipping, face-touching, hot showers — everyday behaviours are accelerating skin ageing and causing chronic breakouts. Here's what to change.",
     category: "Skin Care",
-    author: "Dr. Choudhury Dermatology Team",
+    author: "Dr. Ch. Pritam Pratik Praharaj Dermatology Team",
     date: "April 15, 2024",
     readTime: "4 min read",
     featured: false,
@@ -297,7 +297,7 @@ The fix: 7–9 hours of consistent sleep is genuinely one of the most powerful a
     excerpt:
       "Both replace missing teeth, but they differ in cost, longevity, maintenance, and impact on surrounding teeth. Here's how to decide with your dentist.",
     category: "Dental",
-    author: "Dr. Choudhury",
+    author: "Dr. Ch. Pritam Pratik Praharaj",
     date: "March 28, 2024",
     readTime: "6 min read",
     featured: false,

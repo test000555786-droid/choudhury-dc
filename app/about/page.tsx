@@ -127,7 +127,7 @@ export default function AboutPage() {
                   👨‍⚕️
                 </div>
                 <div className="font-bold text-[#1F2A37] text-xl mb-1" style={{ fontFamily: "var(--font-poppins, sans-serif)" }}>
-                  Dr. Choudhury
+                  Dr. Ch. Pritam Pratik Praharaj
                 </div>
                 <div className="text-sm mb-3" style={{ color: "#6B7280", fontFamily: "var(--font-inter, sans-serif)" }}>
                   Founder &amp; Lead Specialist
@@ -149,10 +149,10 @@ export default function AboutPage() {
                   ))}
                 </div>
                 <p className="text-sm leading-relaxed mb-4" style={{ color: "#4B5563", fontFamily: "var(--font-inter, sans-serif)" }}>
-                  Dr. Choudhury brings over 15 years of clinical expertise spanning advanced restorative dentistry and medical dermatology. After completing specialist training in prosthodontics and subsequently qualifying in MD Dermatology, he established what has become one of Salepur&apos;s most respected dual-specialty clinics.
+                  Dr. Ch. Pritam Pratik Praharaj brings over 15 years of clinical expertise spanning advanced restorative dentistry and medical dermatology. After completing specialist training in prosthodontics and subsequently qualifying in MD Dermatology, he established what has become one of Salepur&apos;s most respected dual-specialty clinics.
                 </p>
                 <p className="text-sm leading-relaxed mb-5" style={{ color: "#4B5563", fontFamily: "var(--font-inter, sans-serif)" }}>
-                  His philosophy is simple: listen first, diagnose precisely, treat gently. Known for his painless approach to dental procedures and his evidence-based dermatological protocols, Dr. Choudhury has built a reputation for outcomes that speak for themselves — evidenced by a 4.9-star rating across 200+ patient reviews.
+                  His philosophy is simple: listen first, diagnose precisely, treat gently. Known for his painless approach to dental procedures and his evidence-based dermatological protocols, Dr. Ch. Pritam Pratik Praharaj has built a reputation for outcomes that speak for themselves — evidenced by a 4.9-star rating across 200+ patient reviews.
                 </p>
                 <blockquote className="text-sm italic pl-4 mb-6" style={{ color: "#4B5563", borderLeft: "3px solid #C9A84C", fontFamily: "var(--font-inter, sans-serif)" }}>
                   &ldquo;Our goal is never just to fix a problem — it&apos;s to give every patient the confidence that comes with knowing their health is in good hands.&rdquo;

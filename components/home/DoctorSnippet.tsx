@@ -49,7 +49,7 @@ export default function DoctorSnippet() {
                   👨‍⚕️
                 </div>
                 <div className="font-bold text-[#1F2A37] text-lg" style={{ fontFamily: "var(--font-poppins, sans-serif)" }}>
-                  Dr. Choudhury
+                  Dr. Ch. Pritam Pratik Praharaj
                 </div>
                 <div className="text-sm mt-1" style={{ color: "#6B7280", fontFamily: "var(--font-inter, sans-serif)" }}>
                   Lead Specialist
@@ -84,14 +84,14 @@ export default function DoctorSnippet() {
                 className="font-bold text-2xl mb-3"
                 style={{ fontFamily: "var(--font-poppins, sans-serif)", color: "#1A1A2E" }}
               >
-                Dr. Choudhury
+                Dr. Ch. Pritam Pratik Praharaj
               </h2>
 
               <p
                 className="text-sm leading-relaxed mb-4"
                 style={{ color: "#6B7280", fontFamily: "var(--font-inter, sans-serif)" }}
               >
-                With over 15 years of practice in Salepur, Dr. Choudhury leads the clinic with a commitment 
+                With over 15 years of practice in Salepur, Dr. Ch. Pritam Pratik Praharaj leads the clinic with a commitment 
                 to pain-free, patient-first care. Trained in advanced dental procedures and evidence-based 
                 dermatology, he brings a rare dual-specialty expertise that allows patients to address both 
                 dental and skin concerns in a single, trusted environment.

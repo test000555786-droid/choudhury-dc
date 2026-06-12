@@ -56,6 +56,7 @@ export default function AboutPage() {
         subtitle="15+ years of trusted dual-specialty care in the heart of Salepur, Odisha."
         breadcrumbs={[{ label: "About Us" }]}
         accentColor="gold"
+        bgImage="/images/hero/about-hero.png"
       />
 
       {/* Clinic Story */}
@@ -177,13 +178,14 @@ export default function AboutPage() {
           <SectionHeading eyebrow="Our Team" title="The People Behind Your Care" subtitle="A dedicated team of specialists and support staff committed to excellence." />
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {[
-              { image: "/images/team/dr-aman.webp", name: "Dr. Prashanta Panda", role: "Oral & Maxillofacial Surgeon", specialty: "BDS, MDS", regd: "Regd. No-2561(A)" },
-              { image: "/images/team/dr-sarah.webp", name: "Dr. Chandrima Goswami", role: "Orthodontist", specialty: "BDS, MDS", regd: "Regd. No-8118(A)" },
+              { image: "/images/team/dr-pritam.png", name: "Dr. Ch. Pritam Pratik Praharaj", role: "Implantologist & Root Canal Specialist", specialty: "B.D.S(Utkal)", regd: "Regd No-1477(A)" },
+              { image: "/images/team/dr-aman.png", name: "Dr. Prashanta Panda", role: "Oral & Maxillofacial Surgeon", specialty: "BDS, MDS", regd: "Regd. No-2561(A)" },
+              { image: "/images/team/dr-sarah.png", name: "Dr. Chandrima Goswami", role: "Orthodontist", specialty: "BDS, MDS", regd: "Regd. No-8118(A)" },
               { image: "/images/team/dr-ritesh.webp", name: "Dr. Satish Saswat Majhi", role: "Periodontist", specialty: "BDS, MDS", regd: "Regd. No-1470(A)" },
               { image: "/images/team/dr-priya.webp", name: "Dr. Debajyoti Bardhan", role: "Oral Medicine & Radiology", specialty: "BDS, MDS", regd: "Regd. No-673(A)" },
               { image: "/images/team/dr-shivam.webp", name: "Dr. Shivam Singh", role: "Dental Surgeon", specialty: "BDS", regd: "Regd No-12925(A)" },
             ].map((member, i) => (
-              <div key={i} className="group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] xl:w-[calc(20%-1.5rem)] rounded-3xl overflow-hidden border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" style={{ background: "#FFFFFF", borderColor: "#E5E7EB", boxShadow: "0 4px 20px rgba(0,0,0,0.03)" }}>
+              <div key={i} className="group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] rounded-3xl overflow-hidden border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" style={{ background: "#FFFFFF", borderColor: "#E5E7EB", boxShadow: "0 4px 20px rgba(0,0,0,0.03)" }}>
                 <div className="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden">
                   <Image 
                     src={member.image} 

@@ -49,6 +49,7 @@ export default function DentalServicesPage() {
         subtitle="From routine check-ups to complete smile transformations — gentle, modern, patient-first dentistry."
         breadcrumbs={[{ label: "Dental Services" }]}
         accentColor="dental"
+        bgImage="/images/hero/dental-hero.png"
       />
 
       {/* Intro */}

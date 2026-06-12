@@ -71,6 +71,7 @@ export default function ContactPage() {
         subtitle="We're here to help — reach out anytime. We'll respond within 2 hours."
         breadcrumbs={[{ label: "Contact" }]}
         accentColor="dental"
+        bgImage="/images/hero/contact-hero.png"
       />
 
       {/* Main two-column section */}

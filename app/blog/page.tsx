@@ -38,6 +38,7 @@ export default function BlogPage() {
         subtitle="Expert tips, treatment guides, and health updates from our clinic in Salepur."
         breadcrumbs={[{ label: "Blog" }]}
         accentColor="dental"
+        bgImage="/images/hero/blog-hero.png"
       />
 
       <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ background: "#FFFFFF" }} aria-label="Blog articles">

@@ -49,6 +49,7 @@ export default function SkinCareServicesPage() {
         subtitle="Science-backed, personalised dermatological care for every skin type and concern."
         breadcrumbs={[{ label: "Skin Care Services" }]}
         accentColor="skin"
+        bgImage="/images/hero/skin-hero.png"
       />
 
       {/* Intro */}

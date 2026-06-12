@@ -4,6 +4,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronRight, Home } from "lucide-react";
 
 interface BreadcrumbItem {
@@ -17,6 +18,7 @@ interface PageHeroProps {
   breadcrumbs: BreadcrumbItem[];
   accentColor?: "dental" | "skin" | "gold";
   bgOverlay?: string;
+  bgImage?: string;
 }
 
 const accentColors = {
@@ -30,22 +32,39 @@ export default function PageHero({
   subtitle,
   breadcrumbs,
   accentColor = "dental",
-  bgOverlay = "rgba(15, 32, 64, 0.78)",
+  bgOverlay = "rgba(245, 239, 230, 0.85)",
+  bgImage,
 }: PageHeroProps) {
   const accent = accentColors[accentColor];
 
   return (
     <section
-      className="relative flex items-center justify-center"
+      className="relative flex items-center justify-center overflow-hidden"
       style={{
         minHeight: "320px",
         background: `linear-gradient(135deg, #F5EFE6 0%, #EFE7DC 100%)`,
       }}
       aria-label="Page header"
     >
+      {bgImage && (
+        <>
+          <Image
+            src={bgImage}
+            alt="Hero Background"
+            fill
+            className="object-cover transition-transform duration-[10000ms] ease-linear scale-100 hover:scale-105"
+            priority
+          />
+          <div
+            className="absolute inset-0 z-0"
+            style={{ background: bgOverlay }}
+          />
+        </>
+      )}
+
       {/* Subtle pattern overlay */}
       <div
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-10 z-0"
         aria-hidden="true"
         style={{
           backgroundImage: `radial-gradient(circle at 20% 80%, ${accent} 0%, transparent 50%), radial-gradient(circle at 80% 20%, ${accent} 0%, transparent 50%)`,

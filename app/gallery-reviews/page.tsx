@@ -69,6 +69,7 @@ export default function GalleryReviewsPage() {
         subtitle="See the transformations our patients have experienced at Choudhury Dental & Skin Care Clinic."
         breadcrumbs={[{ label: "Gallery & Reviews" }]}
         accentColor="gold"
+        bgImage="/images/hero/gallery-hero.png"
       />
 
       {/* Photo Gallery */}

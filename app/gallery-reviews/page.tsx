@@ -7,6 +7,7 @@ import SectionHeading from "@/components/shared/SectionHeading";
 import ReviewCard from "@/components/shared/ReviewCard";
 import { testimonials } from "@/lib/data/testimonials";
 import { pageSEO, siteConfig } from "@/lib/seo";
+import VideoTestimonialsCarousel from "@/components/gallery-reviews/VideoTestimonialsCarousel";
 
 export const metadata: Metadata = {
   title: pageSEO.galleryReviews.title,
@@ -152,37 +153,8 @@ export default function GalleryReviewsPage() {
         </div>
       </section>
 
-      {/* Video Testimonials Placeholder */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ background: "#FFFFFF" }} aria-label="Video testimonials">
-        <div className="max-w-7xl mx-auto">
-          <SectionHeading eyebrow="Patient Stories" title="Video Testimonials" subtitle="Hear directly from patients about their experience at our clinic." />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { name: "Priya S.", treatment: "Smile Makeover" },
-              { name: "Rahul M.", treatment: "Laser Hair Removal" },
-              { name: "Meena D.", treatment: "Dental Implants" },
-            ].map((v, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden border" style={{ borderColor: "#E5E7EB" }}>
-                <div
-                  className="aspect-video flex items-center justify-center"
-                  style={{ background: "linear-gradient(135deg, #1F2A37 0%, #243447 100%)" }}
-                >
-                  <div className="text-center text-white">
-                    <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-2 cursor-pointer transition-all duration-200 hover:scale-110" style={{ background: "rgba(255,255,255,0.2)" }} role="button" aria-label={`Play ${v.name} testimonial video`}>
-                      <svg className="w-6 h-6 ml-1" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
-                    </div>
-                    <div className="text-xs opacity-70">Patient Testimonial</div>
-                  </div>
-                </div>
-                <div className="p-4" style={{ background: "#F7F8FA" }}>
-                  <div className="font-semibold text-sm" style={{ color: "#1A1A2E", fontFamily: "var(--font-poppins, sans-serif)" }}>{v.name}</div>
-                  <div className="text-xs" style={{ color: "#9CA3AF", fontFamily: "var(--font-inter, sans-serif)" }}>{v.treatment}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Video Testimonials Carousel */}
+      <VideoTestimonialsCarousel />
 
       {/* Written Reviews */}
       <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ background: "#F7F8FA" }} aria-label="Patient reviews">

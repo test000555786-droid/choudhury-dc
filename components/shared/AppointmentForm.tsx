@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle, AlertCircle } from "lucide-react";
+import { siteConfig } from "@/lib/seo";
 
 interface FormState {
   name: string;
@@ -87,7 +88,12 @@ export default function AppointmentForm() {
     e.preventDefault();
     if (!validate()) return;
     setSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1200));
+    
+    const textMessage = `*New Appointment Request*%0A%0A*Name:* ${form.name}%0A*Phone:* ${form.phone}%0A*Email:* ${form.email || "N/A"}%0A*Service:* ${form.service}%0A*Date:* ${form.date || "Any"}%0A*Time:* ${form.timeSlot || "Any"}%0A*Concern:* ${form.message || "None"}`;
+    const whatsappUrl = `https://wa.me/${siteConfig.whatsapp}?text=${textMessage}`;
+    
+    window.open(whatsappUrl, "_blank");
+    
     setSubmitting(false);
     setSubmitted(true);
   };
@@ -123,7 +129,7 @@ export default function AppointmentForm() {
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
           <a
-            href="https://wa.me/+91XXXXXXXXXX"
+            href={`https://wa.me/${siteConfig.whatsapp}`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-full text-sm font-semibold text-white"

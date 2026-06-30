@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Choudhury Dental & Skin Care Clinic",
   url: "https://www.choudhuryclinic.com",
-  phone: "+91 XXXXX XXXXX",
-  whatsapp: "+91XXXXXXXXXX",
+  phone: "+91 93375 12311",
+  whatsapp: "+919337512311",
   email: "info@choudhuryclinic.com",
   address: "Kendrapada - Cuttack Rd, Salipur, Odisha 754202",
   city: "Salipur",

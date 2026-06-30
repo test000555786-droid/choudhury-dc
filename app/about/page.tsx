@@ -143,23 +143,23 @@ export default function AboutPage() {
               </div>
               <div className="col-span-2 p-8 sm:p-10">
                 <div className="flex flex-wrap gap-2 mb-5">
-                  {["BDS · MDS (Prosthodontics)", "MBBS · MD Dermatology", "15+ Years Experience", "Dual Specialization"].map((q) => (
+                  {["BDS · MDS (Prosthodontics)", "15+ Years Experience", "Laser Specialist"].map((q) => (
                     <span key={q} className="text-xs font-semibold px-3 py-1.5 rounded-full" style={{ background: "#F3F4F6", color: "#374151", fontFamily: "var(--font-inter, sans-serif)" }}>
                       {q}
                     </span>
                   ))}
                 </div>
                 <p className="text-sm leading-relaxed mb-4" style={{ color: "#4B5563", fontFamily: "var(--font-inter, sans-serif)" }}>
-                  Dr. Ch. Pritam Pratik Praharaj brings over 15 years of clinical expertise spanning advanced restorative dentistry and medical dermatology. After completing specialist training in prosthodontics and subsequently qualifying in MD Dermatology, he established what has become one of Salepur&apos;s most respected dual-specialty clinics.
+                  Dr. Ch. Pritam Pratik Praharaj brings over 15 years of clinical expertise spanning advanced restorative dentistry. After completing specialist training in prosthodontics, he established what has become one of Salepur&apos;s most respected dual-specialty clinics.
                 </p>
                 <p className="text-sm leading-relaxed mb-5" style={{ color: "#4B5563", fontFamily: "var(--font-inter, sans-serif)" }}>
-                  His philosophy is simple: listen first, diagnose precisely, treat gently. Known for his painless approach to dental procedures and his evidence-based dermatological protocols, Dr. Ch. Pritam Pratik Praharaj has built a reputation for outcomes that speak for themselves — evidenced by a 4.9-star rating across 200+ patient reviews.
+                  His philosophy is simple: listen first, diagnose precisely, treat gently. Known for his painless approach to dental procedures, Dr. Ch. Pritam Pratik Praharaj has built a reputation for outcomes that speak for themselves — evidenced by a 4.9-star rating across 200+ patient reviews.
                 </p>
                 <blockquote className="text-sm italic pl-4 mb-6" style={{ color: "#4B5563", borderLeft: "3px solid #C9A84C", fontFamily: "var(--font-inter, sans-serif)" }}>
                   &ldquo;Our goal is never just to fix a problem — it&apos;s to give every patient the confidence that comes with knowing their health is in good hands.&rdquo;
                 </blockquote>
                 <div className="grid sm:grid-cols-2 gap-2">
-                  {["IDA Member (Indian Dental Association)", "IADVL Member (Dermatology)", "Certified Laser Practitioner", "Certified Implantologist (IAO)", "Digital Smile Design Trained", "PRP Therapy Certified"].map((c) => (
+                  {["IDA Member (Indian Dental Association)", "Certified Laser Practitioner", "Certified Implantologist (IAO)", "Digital Smile Design Trained", "PRP Therapy Certified"].map((c) => (
                     <div key={c} className="flex items-center gap-2 text-xs" style={{ color: "#374151", fontFamily: "var(--font-inter, sans-serif)" }}>
                       <CheckCircle className="w-3.5 h-3.5 flex-shrink-0" style={{ color: "#22C55E" }} aria-hidden="true" />
                       {c}
@@ -178,12 +178,12 @@ export default function AboutPage() {
           <SectionHeading eyebrow="Our Team" title="The People Behind Your Care" subtitle="A dedicated team of specialists and support staff committed to excellence." />
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {[
-              { image: "/images/team/dr-pritam.png", name: "Dr. Ch. Pritam Pratik Praharaj", role: "Implantologist & Root Canal Specialist", specialty: "B.D.S(Utkal)", regd: "Regd No-1477(A)" },
-              { image: "/images/team/dr-aman.png", name: "Dr. Prashanta Panda", role: "Oral & Maxillofacial Surgeon", specialty: "BDS, MDS", regd: "Regd. No-2561(A)" },
-              { image: "/images/team/dr-sarah.png", name: "Dr. Chandrima Goswami", role: "Orthodontist", specialty: "BDS, MDS", regd: "Regd. No-8118(A)" },
+              { image: "/images/team/dr-pritam-pratik.webp", name: "Dr. Ch. Pritam Pratik Praharaj", role: "Implantologist & Root Canal Specialist", specialty: "B.D.S(Utkal)", regd: "Regd No-1477(A)" },
+              { image: "/images/team/dr-prashant.webp", name: "Dr. Prashanta Panda", role: "Oral & Maxillofacial Surgeon", specialty: "BDS, MDS", regd: "Regd. No-2561(A)" },
+              { image: "/images/team/dr-chandrima.webp", name: "Dr. Chandrima Goswami", role: "Orthodontist", specialty: "BDS, MDS", regd: "Regd. No-8118(A)" },
               { image: "/images/team/dr-ritesh.webp", name: "Dr. Satish Saswat Majhi", role: "Periodontist", specialty: "BDS, MDS", regd: "Regd. No-1470(A)" },
               { image: "/images/team/dr-priya.webp", name: "Dr. Debajyoti Bardhan", role: "Oral Medicine & Radiology", specialty: "BDS, MDS", regd: "Regd. No-673(A)" },
-              { image: "/images/team/dr-shivam.webp", name: "Dr. Shivam Singh", role: "Dental Surgeon", specialty: "BDS", regd: "Regd No-12925(A)" },
+              { image: "/images/team/Dr-Shivam-Singh.webp", name: "Dr. Shivam Singh", role: "Dental Surgeon", specialty: "BDS", regd: "Regd No-12925(A)" },
             ].map((member, i) => (
               <div key={i} className="group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] rounded-3xl overflow-hidden border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" style={{ background: "#FFFFFF", borderColor: "#E5E7EB", boxShadow: "0 4px 20px rgba(0,0,0,0.03)" }}>
                 <div className="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden">

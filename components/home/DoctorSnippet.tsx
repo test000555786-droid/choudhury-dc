@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 const credentials = [
   "IDA Member (Indian Dental Association)",
   "Certified Implantologist",
-  "Laser Specialist (Dermatology)",
+  "Laser Specialist",
   "15+ Years Clinical Experience",
 ];
 
@@ -68,15 +68,9 @@ export default function DoctorSnippet() {
                 </span>
                 <span
                   className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full"
-                  style={{ background: "rgba(232,116,138,0.08)", color: "#E8748A", fontFamily: "var(--font-inter, sans-serif)" }}
-                >
-                  MBBS · MD Dermatology
-                </span>
-                <span
-                  className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full"
                   style={{ background: "rgba(34,197,94,0.1)", color: "#22C55E", fontFamily: "var(--font-inter, sans-serif)" }}
                 >
-                  Dual Specialization
+                  15+ Years Experience
                 </span>
               </div>
 
@@ -92,9 +86,8 @@ export default function DoctorSnippet() {
                 style={{ color: "#6B7280", fontFamily: "var(--font-inter, sans-serif)" }}
               >
                 With over 15 years of practice in Salepur, Dr. Ch. Pritam Pratik Praharaj leads the clinic with a commitment 
-                to pain-free, patient-first care. Trained in advanced dental procedures and evidence-based 
-                dermatology, he brings a rare dual-specialty expertise that allows patients to address both 
-                dental and skin concerns in a single, trusted environment.
+                to pain-free, patient-first care. Trained in advanced dental procedures, he has built a reputation 
+                for excellence, helping establish the clinic as a trusted destination for comprehensive healthcare.
               </p>
 
               <blockquote
@@ -105,7 +98,7 @@ export default function DoctorSnippet() {
                   fontFamily: "var(--font-inter, sans-serif)",
                 }}
               >
-                &ldquo;Every patient deserves a dentist and dermatologist who listens first. We treat people, not just conditions.&rdquo;
+                &ldquo;Every patient deserves a dentist who listens first. We treat people, not just conditions.&rdquo;
               </blockquote>
 
               <div className="grid sm:grid-cols-2 gap-2 mb-6">

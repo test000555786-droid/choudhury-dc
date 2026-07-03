@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
@@ -34,21 +35,23 @@ export default function DoctorSnippet() {
           <div className="grid md:grid-cols-3 gap-0">
             {/* Doctor photo placeholder */}
             <div
-              className="flex items-center justify-center p-12"
+              className="flex items-center justify-center p-8 md:p-12"
               style={{
                 background: "linear-gradient(135deg, #F5EFE6 0%, #EFE7DC 100%)",
-                minHeight: "280px",
               }}
-              aria-hidden="true"
             >
-              <div className="text-center">
+              <div className="text-center w-full">
                 <div
-                  className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center text-4xl"
-                  style={{ background: "rgba(31,42,55,0.05)" }}
+                  className="relative w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto mb-5 overflow-hidden border-4 border-white shadow-md"
                 >
-                  👨‍⚕️
+                  <Image
+                    src="/images/team/dr-pritam-pratik.webp"
+                    alt="Dr. Ch. Pritam Pratik Praharaj"
+                    fill
+                    className="object-cover object-top"
+                  />
                 </div>
-                <div className="font-bold text-[#1F2A37] text-lg" style={{ fontFamily: "var(--font-poppins, sans-serif)" }}>
+                <div className="font-bold text-[#1F2A37] text-lg md:text-xl" style={{ fontFamily: "var(--font-poppins, sans-serif)" }}>
                   Dr. Ch. Pritam Pratik Praharaj
                 </div>
                 <div className="text-sm mt-1" style={{ color: "#6B7280", fontFamily: "var(--font-inter, sans-serif)" }}>
@@ -58,7 +61,7 @@ export default function DoctorSnippet() {
             </div>
 
             {/* Doctor info */}
-            <div className="col-span-2 p-8 flex flex-col justify-center">
+            <div className="md:col-span-2 p-8 flex flex-col justify-center">
               <div className="flex flex-wrap gap-2 mb-4">
                 <span
                   className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full"

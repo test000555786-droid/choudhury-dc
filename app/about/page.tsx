@@ -121,11 +121,16 @@ export default function AboutPage() {
           >
             <div className="grid md:grid-cols-3 gap-0">
               <div
-                className="flex flex-col items-center justify-center p-12 text-center"
-                style={{ background: "linear-gradient(135deg, #F5EFE6 0%, #EFE7DC 100%)", minHeight: "320px" }}
+                className="flex flex-col items-center justify-center p-8 md:p-12 text-center"
+                style={{ background: "linear-gradient(135deg, #F5EFE6 0%, #EFE7DC 100%)" }}
               >
-                <div className="w-28 h-28 rounded-full mx-auto mb-4 flex items-center justify-center text-5xl" style={{ background: "rgba(31,42,55,0.05)" }} aria-hidden="true">
-                  👨‍⚕️
+                <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto mb-6 overflow-hidden border-4 border-white shadow-md">
+                  <Image 
+                    src="/images/team/dr-pritam-pratik.webp" 
+                    alt="Dr. Ch. Pritam Pratik Praharaj" 
+                    fill 
+                    className="object-cover object-top" 
+                  />
                 </div>
                 <div className="font-bold text-[#1F2A37] text-xl mb-1" style={{ fontFamily: "var(--font-poppins, sans-serif)" }}>
                   Dr. Ch. Pritam Pratik Praharaj
@@ -141,7 +146,7 @@ export default function AboutPage() {
                   ))}
                 </div>
               </div>
-              <div className="col-span-2 p-8 sm:p-10">
+              <div className="md:col-span-2 p-8 sm:p-10">
                 <div className="flex flex-wrap gap-2 mb-5">
                   {["BDS · MDS (Prosthodontics)", "15+ Years Experience", "Laser Specialist"].map((q) => (
                     <span key={q} className="text-xs font-semibold px-3 py-1.5 rounded-full" style={{ background: "#F3F4F6", color: "#374151", fontFamily: "var(--font-inter, sans-serif)" }}>
@@ -177,14 +182,25 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <SectionHeading eyebrow="Our Team" title="The People Behind Your Care" subtitle="A dedicated team of specialists and support staff committed to excellence." />
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
-            {[
+            {([
               { image: "/images/team/dr-pritam-pratik.webp", name: "Dr. Ch. Pritam Pratik Praharaj", role: "Implantologist & Root Canal Specialist", specialty: "B.D.S(Utkal)", regd: "Regd No-1477(A)" },
-              { image: "/images/team/dr-prashant.webp", name: "Dr. Prashanta Panda", role: "Oral & Maxillofacial Surgeon", specialty: "BDS, MDS", regd: "Regd. No-2561(A)" },
+              { 
+                image: "/images/team/dr-prashant.webp", 
+                name: "Dr. Prashanta Panda", 
+                role: "Oral & Maxillofacial Surgeon (OMFS)", 
+                specialty: "BDS (UTKAL) Gold Medalist, MDS (TATA) Gold Medalist", 
+                regd: "Regd. No - 2561(A)",
+                details: [
+                  "Ex-SR, SCB Dental College & Hospital, Cuttack.",
+                  "Asst. Prof, Hi-Tech Dental College & Hospital, Cuttack.",
+                  "Assoc. Cleft & Craniofacial Surgeon, ABMSS, German Cleft, Bengaluru"
+                ]
+              },
               { image: "/images/team/dr-chandrima.webp", name: "Dr. Chandrima Goswami", role: "Orthodontist", specialty: "BDS, MDS", regd: "Regd. No-8118(A)" },
               { image: "/images/team/dr-ritesh.webp", name: "Dr. Satish Saswat Majhi", role: "Periodontist", specialty: "BDS, MDS", regd: "Regd. No-1470(A)" },
               { image: "/images/team/dr-priya.webp", name: "Dr. Debajyoti Bardhan", role: "Oral Medicine & Radiology", specialty: "BDS, MDS", regd: "Regd. No-673(A)" },
               { image: "/images/team/Dr-Shivam-Singh.webp", name: "Dr. Shivam Singh", role: "Dental Surgeon", specialty: "BDS", regd: "Regd No-12925(A)" },
-            ].map((member, i) => (
+            ] as { image: string; name: string; role: string; specialty: string; regd: string; details?: string[] }[]).map((member, i) => (
               <div key={i} className="group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] rounded-3xl overflow-hidden border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" style={{ background: "#FFFFFF", borderColor: "#E5E7EB", boxShadow: "0 4px 20px rgba(0,0,0,0.03)" }}>
                 <div className="relative w-full aspect-[4/5] bg-gray-100 overflow-hidden">
                   <Image 
@@ -201,6 +217,15 @@ export default function AboutPage() {
                   <div className="flex flex-col gap-0.5">
                     <div className="text-sm font-medium" style={{ color: "#4B5563", fontFamily: "var(--font-inter, sans-serif)" }}>{member.specialty}</div>
                     <div className="text-[11px]" style={{ color: "#9CA3AF", fontFamily: "var(--font-inter, sans-serif)" }}>{member.regd}</div>
+                    {member.details && member.details.length > 0 && (
+                      <div className="mt-2.5 flex flex-col gap-1.5 border-t border-gray-100 pt-2.5 text-left">
+                        {member.details.map((detail, idx) => (
+                          <div key={idx} className="text-[10.5px] leading-snug" style={{ color: "#6B7280", fontFamily: "var(--font-inter, sans-serif)" }}>
+                            • {detail}
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

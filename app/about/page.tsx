@@ -197,7 +197,7 @@ export default function AboutPage() {
                 ]
               },
               { image: "/images/team/dr-chandrima.webp", name: "Dr. Chandrima Goswami", role: "Orthodontist", specialty: "BDS, MDS", regd: "Regd. No-8118(A)" },
-              { image: "/images/team/dr-ritesh.webp", name: "Dr. Satish Saswat Majhi", role: "Periodontist", specialty: "BDS, MDS", regd: "Regd. No-1470(A)" },
+              { image: "/images/team/dr-satish.webp", name: "Dr. Satish Saswat Majhi", role: "Periodontist", specialty: "BDS, MDS", regd: "Regd. No-1470(A)" },
               { image: "/images/team/dr-priya.webp", name: "Dr. Debajyoti Bardhan", role: "Oral Medicine & Radiology", specialty: "BDS, MDS", regd: "Regd. No-673(A)" },
               { image: "/images/team/Dr-Shivam-Singh.webp", name: "Dr. Shivam Singh", role: "Dental Surgeon", specialty: "BDS", regd: "Regd No-12925(A)" },
             ] as { image: string; name: string; role: string; specialty: string; regd: string; details?: string[] }[]).map((member, i) => (

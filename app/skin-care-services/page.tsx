@@ -5,6 +5,7 @@ import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
 import FAQAccordion from "@/components/shared/FAQAccordion";
 import SkinServiceCard from "@/components/skin/SkinServiceCard";
+import SkinDoctorSnippet from "@/components/skin/SkinDoctorSnippet";
 import { skinServices, skinFAQs } from "@/lib/data/skin-services";
 import { pageSEO, siteConfig } from "@/lib/seo";
 
@@ -51,6 +52,9 @@ export default function SkinCareServicesPage() {
         accentColor="skin"
         bgImage="/images/hero/skin-hero.png"
       />
+
+      {/* Doctor Profile */}
+      <SkinDoctorSnippet />
 
       {/* Intro */}
       <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ background: "#FFFFFF" }}>

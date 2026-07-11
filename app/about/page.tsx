@@ -198,7 +198,7 @@ export default function AboutPage() {
               },
               { image: "/images/team/dr-chandrima.webp", name: "Dr. Chandrima Goswami", role: "Orthodontist", specialty: "BDS, MDS", regd: "Regd. No-8118(A)" },
               { image: "/images/team/dr-satish.webp", name: "Dr. Satish Saswat Majhi", role: "Periodontist", specialty: "BDS, MDS", regd: "Regd. No-1470(A)" },
-              { image: "/images/team/dr-priya.webp", name: "Dr. Debajyoti Bardhan", role: "Oral Medicine & Radiology", specialty: "BDS, MDS", regd: "Regd. No-673(A)" },
+              { image: "/images/team/dr-debjyoti.webp", name: "Dr. Debajyoti Bardhan", role: "Oral Medicine & Radiology", specialty: "BDS, MDS", regd: "Regd. No-673(A)" },
               { image: "/images/team/Dr-Shivam-Singh.webp", name: "Dr. Shivam Singh", role: "Dental Surgeon", specialty: "BDS", regd: "Regd No-12925(A)" },
             ] as { image: string; name: string; role: string; specialty: string; regd: string; details?: string[] }[]).map((member, i) => (
               <div key={i} className="group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] rounded-3xl overflow-hidden border transition-all duration-300 hover:-translate-y-2 hover:shadow-xl" style={{ background: "#FFFFFF", borderColor: "#E5E7EB", boxShadow: "0 4px 20px rgba(0,0,0,0.03)" }}>

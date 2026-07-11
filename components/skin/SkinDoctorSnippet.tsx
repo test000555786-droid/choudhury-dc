@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
@@ -41,8 +42,13 @@ export default function SkinDoctorSnippet() {
               }}
             >
               <div className="text-center w-full">
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full mx-auto mb-5 flex items-center justify-center text-3xl font-bold text-white shadow-md" style={{ background: "#E8748A", fontFamily: "var(--font-poppins, sans-serif)" }}>
-                  NR
+                <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-5 overflow-hidden border-4 border-white shadow-md">
+                  <Image 
+                    src="/images/team/skin-specialist.webp" 
+                    alt="Dr. Ch. Nihar Ranjan Praharaj" 
+                    fill 
+                    className="object-cover object-top" 
+                  />
                 </div>
                 <div className="font-bold text-[#1F2A37] text-lg md:text-xl" style={{ fontFamily: "var(--font-poppins, sans-serif)" }}>
                   Dr. Ch. Nihar Ranjan Praharaj

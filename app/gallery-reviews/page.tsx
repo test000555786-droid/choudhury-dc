@@ -125,24 +125,26 @@ export default function GalleryReviewsPage() {
           <SectionHeading eyebrow="Transformations" title="Before &amp; After" subtitle="Side-by-side comparisons of real patient outcomes." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { treatment: "Smile Makeover", type: "Dental" },
-              { treatment: "Acne Scar Treatment", type: "Skin Care" },
-              { treatment: "Teeth Whitening", type: "Dental" },
+              { treatment: "Smile Makeover", type: "Dental", beforeImg: "/images/transformations/smile_makeover_before.webp", afterImg: "/images/transformations/smile_makeover_after.webp" },
+              { treatment: "Acne Scar Treatment", type: "Skin Care", beforeImg: "/images/transformations/acne_scar_before.webp", afterImg: "/images/transformations/acne_scar_after.webp" },
+              { treatment: "Teeth Whitening", type: "Dental", beforeImg: "/images/transformations/teeth_whitening_before.webp", afterImg: "/images/transformations/teeth_whitening_after.webp" },
             ].map((item, i) => {
               const isDental = item.type === "Dental";
               return (
-                <div key={i} className="rounded-2xl overflow-hidden border" style={{ borderColor: "#E5E7EB" }}>
+                <div key={i} className="rounded-2xl overflow-hidden border" style={{ borderColor: "#E5E7EB", background: "#FFFFFF" }}>
                   <div className="grid grid-cols-2" style={{ minHeight: "180px" }}>
-                    <div className="flex flex-col items-center justify-center p-6 gap-2" style={{ background: "rgba(239,68,68,0.05)", borderRight: "1px solid #E5E7EB" }}>
-                      <div className="text-3xl" aria-hidden="true">{isDental ? "😕" : "😔"}</div>
-                      <div className="text-xs font-bold uppercase tracking-wider" style={{ color: "#EF4444" }}>Before</div>
+                    <div className="relative flex flex-col items-center justify-end p-4 gap-2" style={{ borderRight: "1px solid #E5E7EB", minHeight: "220px" }}>
+                      <Image src={item.beforeImg} alt={`${item.treatment} Before`} fill className="object-cover" sizes="(max-width: 768px) 50vw, 33vw" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                      <div className="relative z-10 text-xs font-bold uppercase tracking-wider text-white bg-red-500/80 px-2 py-0.5 rounded backdrop-blur-sm shadow-sm" style={{ fontFamily: "var(--font-inter, sans-serif)" }}>Before</div>
                     </div>
-                    <div className="flex flex-col items-center justify-center p-6 gap-2" style={{ background: "rgba(34,197,94,0.05)" }}>
-                      <div className="text-3xl" aria-hidden="true">{isDental ? "😁" : "😊"}</div>
-                      <div className="text-xs font-bold uppercase tracking-wider" style={{ color: "#22C55E" }}>After</div>
+                    <div className="relative flex flex-col items-center justify-end p-4 gap-2" style={{ minHeight: "220px" }}>
+                      <Image src={item.afterImg} alt={`${item.treatment} After`} fill className="object-cover" sizes="(max-width: 768px) 50vw, 33vw" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                      <div className="relative z-10 text-xs font-bold uppercase tracking-wider text-white bg-green-500/80 px-2 py-0.5 rounded backdrop-blur-sm shadow-sm" style={{ fontFamily: "var(--font-inter, sans-serif)" }}>After</div>
                     </div>
                   </div>
-                  <div className="px-4 py-3 text-center border-t" style={{ borderColor: "#E5E7EB", background: "#FFFFFF" }}>
+                  <div className="px-4 py-3 text-center border-t relative z-20" style={{ borderColor: "#E5E7EB", background: "#FFFFFF" }}>
                     <div className="text-xs font-semibold" style={{ color: isDental ? "#C5A46D" : "#E8748A", fontFamily: "var(--font-poppins, sans-serif)" }}>{item.treatment}</div>
                     <div className="text-xs mt-0.5" style={{ color: "#9CA3AF", fontFamily: "var(--font-inter, sans-serif)" }}>{item.type}</div>
                   </div>

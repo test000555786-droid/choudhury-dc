@@ -132,6 +132,6 @@ export const dentalFAQs = [
   {
     question: "What should I do in a dental emergency?",
     answer:
-      "Call our clinic immediately at +91 93375 12311 — we offer same-day emergency appointments. For a knocked-out tooth, keep it moist (in milk or between your cheek and gum) and come in within 30–60 minutes. For severe pain, take a painkiller and avoid hot/cold foods. Never delay treatment for dental trauma.",
+      "Call our clinic immediately at +91 94393 98911 — we offer same-day emergency appointments. For a knocked-out tooth, keep it moist (in milk or between your cheek and gum) and come in within 30–60 minutes. For severe pain, take a painkiller and avoid hot/cold foods. Never delay treatment for dental trauma.",
   },
 ];

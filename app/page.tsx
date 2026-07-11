@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: pageSEO.home.title,
   description: pageSEO.home.description,
   keywords: pageSEO.home.keywords,
+  alternates: { canonical: siteConfig.url },
   openGraph: {
     title: pageSEO.home.title,
     description: pageSEO.home.description,

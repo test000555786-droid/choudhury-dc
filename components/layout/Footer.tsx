@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#94a3b8", fontFamily: "var(--font-inter, sans-serif)" }}>
-              Salepur&rsquo;s trusted dual-specialty clinic — combining expert dental care with advanced dermatology since 2009. Serving patients across Odisha with precision, compassion, and care.
+              Salipur&rsquo;s trusted dual-specialty clinic — combining expert dental care with advanced dermatology since 2009. Serving patients across Odisha with precision, compassion, and care.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-3">
@@ -91,7 +91,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href={`https://maps.google.com`}
+                href={siteConfig.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors duration-200"
@@ -201,8 +201,8 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <Clock className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: "#C5A46D" }} />
                 <div className="text-sm leading-relaxed" style={{ color: "#94a3b8", fontFamily: "var(--font-inter, sans-serif)" }}>
-                  <div>Mon–Sat: 9:00 AM – 8:00 PM</div>
-                  <div>Sun: 10:00 AM – 2:00 PM</div>
+                  <div>Everyday: 9:00 AM – 8:00 PM</div>
+                  <div>Friday: 9:00 AM – 2:00 PM (Evening closed)</div>
                 </div>
               </div>
             </address>
@@ -218,7 +218,7 @@ export default function Footer() {
             &copy; {year} Choudhury Dental &amp; Skin Care Clinic. All rights reserved.
           </p>
           <p className="text-xs" style={{ color: "#9CA3AF", fontFamily: "var(--font-inter, sans-serif)" }}>
-            Serving patients in Salepur, Odisha
+            Serving patients in Salipur, Cuttack District, Kendrapada, Nichintakohili, Choudwar, Chandikhol, Naraj, Barang and nearby areas.
           </p>
           <p className="text-xs" style={{ color: "#9CA3AF", fontFamily: "var(--font-inter, sans-serif)" }}>
             Designed with ♥ for better health

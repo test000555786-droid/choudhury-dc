@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, Monitor, Sparkles } from "lucide-react";
+import { ArrowRight, ShieldCheck, Monitor } from "lucide-react";
 
 const ToothIcon = ({ className, strokeWidth = 1.5 }: { className?: string, strokeWidth?: number }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>

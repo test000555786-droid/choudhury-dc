@@ -128,7 +128,7 @@ export default function TestimonialsTeaser() {
                       ★ ★ ★ ★ ★
                     </div>
                     <p className="text-white text-xs sm:text-sm md:text-base font-medium mb-3 line-clamp-3 sm:line-clamp-none leading-snug drop-shadow-md" style={{ fontFamily: "var(--font-inter, sans-serif)" }}>
-                      "{item.text}"
+                      &quot;{item.text}&quot;
                     </p>
                     <div className="flex flex-col">
                       <span className="text-white font-bold text-sm sm:text-base drop-shadow-md" style={{ fontFamily: "var(--font-poppins, sans-serif)" }}>

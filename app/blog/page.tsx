@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: pageSEO.blog.title,
   description: pageSEO.blog.description,
   keywords: pageSEO.blog.keywords,
+  alternates: { canonical: `${siteConfig.url}/blog` },
   openGraph: {
     title: pageSEO.blog.title,
     description: pageSEO.blog.description,

@@ -67,13 +67,13 @@ export default function DoctorSnippet() {
                   className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full"
                   style={{ background: "rgba(31,42,55,0.05)", color: "#1F2A37", fontFamily: "var(--font-inter, sans-serif)" }}
                 >
-                  BDS · MDS (Dental)
+                  BDS, MDS — Oral & Maxillofacial Surgery
                 </span>
                 <span
                   className="inline-block text-xs font-semibold px-2.5 py-1 rounded-full"
                   style={{ background: "rgba(34,197,94,0.1)", color: "#22C55E", fontFamily: "var(--font-inter, sans-serif)" }}
                 >
-                  15+ Years Experience
+                  Regd No-1477(A)
                 </span>
               </div>
 
@@ -88,8 +88,8 @@ export default function DoctorSnippet() {
                 className="text-sm leading-relaxed mb-4"
                 style={{ color: "#6B7280", fontFamily: "var(--font-inter, sans-serif)" }}
               >
-                With over 15 years of practice in Salepur, Dr. Ch. Pritam Pratik Praharaj leads the clinic with a commitment 
-                to pain-free, patient-first care. Trained in advanced dental procedures, he has built a reputation 
+                With over 15 years of practice in Salipur, Dr. Ch. Pritam Pratik Praharaj leads the clinic with a commitment 
+                to pain-free, patient-first care. As a specialist in Oral & Maxillofacial Surgery, he has built a reputation 
                 for excellence, helping establish the clinic as a trusted destination for comprehensive healthcare.
               </p>
 

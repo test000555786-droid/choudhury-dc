@@ -4,12 +4,13 @@ import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 import PageHero from "@/components/shared/PageHero";
 import SectionHeading from "@/components/shared/SectionHeading";
-import { pageSEO, siteConfig } from "@/lib/seo";
+import { pageSEO, siteConfig, physicianSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: pageSEO.about.title,
   description: pageSEO.about.description,
   keywords: pageSEO.about.keywords,
+  alternates: { canonical: `${siteConfig.url}/about` },
   openGraph: {
     title: pageSEO.about.title,
     description: pageSEO.about.description,
@@ -50,6 +51,7 @@ export default function AboutPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(physicianSchema) }} />
 
       <PageHero
         title="About Choudhury Dental & Skin Care Clinic"
@@ -148,14 +150,14 @@ export default function AboutPage() {
               </div>
               <div className="md:col-span-2 p-8 sm:p-10">
                 <div className="flex flex-wrap gap-2 mb-5">
-                  {["BDS · MDS (Prosthodontics)", "15+ Years Experience", "Laser Specialist"].map((q) => (
+                  {["BDS, MDS — Oral & Maxillofacial Surgery", "Regd No-1477(A)", "15+ Years Experience"].map((q) => (
                     <span key={q} className="text-xs font-semibold px-3 py-1.5 rounded-full" style={{ background: "#F3F4F6", color: "#374151", fontFamily: "var(--font-inter, sans-serif)" }}>
                       {q}
                     </span>
                   ))}
                 </div>
                 <p className="text-sm leading-relaxed mb-4" style={{ color: "#4B5563", fontFamily: "var(--font-inter, sans-serif)" }}>
-                  Dr. Ch. Pritam Pratik Praharaj brings over 15 years of clinical expertise spanning advanced restorative dentistry. After completing specialist training in prosthodontics, he established what has become one of Salepur&apos;s most respected dual-specialty clinics.
+                  Dr. Ch. Pritam Pratik Praharaj brings over 15 years of clinical expertise spanning advanced restorative dentistry and surgical procedures. After completing specialist training in Oral & Maxillofacial Surgery, he established what has become one of Salipur&apos;s most respected dual-specialty clinics.
                 </p>
                 <p className="text-sm leading-relaxed mb-5" style={{ color: "#4B5563", fontFamily: "var(--font-inter, sans-serif)" }}>
                   His philosophy is simple: listen first, diagnose precisely, treat gently. Known for his painless approach to dental procedures, Dr. Ch. Pritam Pratik Praharaj has built a reputation for outcomes that speak for themselves — evidenced by a 4.9-star rating across 200+ patient reviews.

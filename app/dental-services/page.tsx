@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: pageSEO.dentalServices.title,
   description: pageSEO.dentalServices.description,
   keywords: pageSEO.dentalServices.keywords,
+  alternates: { canonical: `${siteConfig.url}/dental-services` },
   openGraph: {
     title: pageSEO.dentalServices.title,
     description: pageSEO.dentalServices.description,

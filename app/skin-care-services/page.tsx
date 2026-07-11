@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: pageSEO.skinCareServices.title,
   description: pageSEO.skinCareServices.description,
   keywords: pageSEO.skinCareServices.keywords,
+  alternates: { canonical: `${siteConfig.url}/skin-care-services` },
   openGraph: {
     title: pageSEO.skinCareServices.title,
     description: pageSEO.skinCareServices.description,

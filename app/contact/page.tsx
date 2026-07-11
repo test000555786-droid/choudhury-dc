@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: pageSEO.contact.title,
   description: pageSEO.contact.description,
   keywords: pageSEO.contact.keywords,
+  alternates: { canonical: `${siteConfig.url}/contact` },
   openGraph: {
     title: pageSEO.contact.title,
     description: pageSEO.contact.description,
@@ -118,7 +119,7 @@ export default function ContactPage() {
                   {
                     icon: Clock,
                     label: "Clinic Hours",
-                    content: "Mon–Sat: 9:00 AM – 8:00 PM\nSun: 10:00 AM – 2:00 PM",
+                    content: "Everyday: 9:00 AM – 8:00 PM\nFriday: 9:00 AM – 2:00 PM (Evening closed)",
                     color: "#C9A84C",
                     href: undefined,
                   },

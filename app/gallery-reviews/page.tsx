@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: pageSEO.galleryReviews.title,
   description: pageSEO.galleryReviews.description,
   keywords: pageSEO.galleryReviews.keywords,
+  alternates: { canonical: `${siteConfig.url}/gallery-reviews` },
   openGraph: {
     title: pageSEO.galleryReviews.title,
     description: pageSEO.galleryReviews.description,

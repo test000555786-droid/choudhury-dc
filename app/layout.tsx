@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Choudhury Dental & Skin Care Clinic" }],
   creator: "Choudhury Dental & Skin Care Clinic",
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: siteConfig.url,
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",

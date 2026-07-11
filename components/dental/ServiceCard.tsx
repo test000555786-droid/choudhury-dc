@@ -14,8 +14,6 @@ interface ServiceCardProps {
   services: string[];
   image?: string;
   index: number;
-  accentColor?: string;
-  bgColor?: string;
 }
 
 export default function ServiceCard({
@@ -26,11 +24,8 @@ export default function ServiceCard({
   services,
   image,
   index,
-  accentColor = "#C5A46D",
-  bgColor = "#F5EFE6",
 }: ServiceCardProps) {
   const isEmergency = id === "emergency-dental";
-  const cardAccent = isEmergency ? "#EF4444" : accentColor;
   const [isExpanded, setIsExpanded] = useState(false);
   
   return (
